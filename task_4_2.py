@@ -17,4 +17,4 @@ for i in range(n-1):
     if my_list[i + 1] > my_list[i]:
         my_list1.append(my_list[i + 1])
 
-print("Новый список =",my_list1)
+print(f'Новый список = {my_list1}')
