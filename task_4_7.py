@@ -12,11 +12,12 @@ def fact():
     for el in count(1):
         yield factorial(el)
 
-gen = fact()
+generat = fact()
+per = int(input("Факториал какого числа необходимо вычислить? "))
 x = 0
-for i in gen:
-    if x < 4:
-        print(i)
+for i in generat:
+    if x < per:
         x += 1
+        print(i)
     else:
         break
