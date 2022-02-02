@@ -2,7 +2,7 @@
 # выполнить подсчёт строк и слов в каждой строке.
 i = 0
 i_len = 0
-with open("task_5_1.txt") as f_op:
+with open("task_5_2.txt") as f_op:
     for line in f_op:
         i += 1
         st = line
