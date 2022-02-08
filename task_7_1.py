@@ -4,3 +4,28 @@
 # Следующий шаг — реализовать перегрузку метода __str__() для вывода матрицы в привычном виде.
 # Далее реализовать перегрузку метода __add__() для реализации операции сложения двух объектов класса
 # Matrix (двух матриц). Результатом сложения должна быть новая матрица.
+class Matr():
+    def __init__(self, arr1, arr2):
+        self.arr1 = arr1
+        self.arr2 = arr2
+
+
+    def __str__(self):
+        return(f"Получены массивы: ({self.arr1}, {self.arr2})")
+
+    def __add__(self):
+        mx = [[0, 0, 0],
+              [0, 0, 0]]
+
+        for i in range(len(self.arr1)):
+            for j in range(len(self.arr2[0])):
+                mx[i][j] = self.arr1[i][j] + self.arr2[i][j]
+        return mx
+
+
+ar = Matr([[1, 2, 3],
+           [7, 8, 9]],
+          [[1, 2, 3],
+           [7, 8, 9]])
+print("Сумма матриц составила: ", ar.__add__())
+print(ar.__str__())
