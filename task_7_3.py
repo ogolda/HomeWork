@@ -44,7 +44,7 @@ class cell():
                 print(i+1, end=' ')
         print()
 
-c1 = cell(12)
+c1 = cell(15)
 c1.make_order(5)
 c2 = cell(10)
 

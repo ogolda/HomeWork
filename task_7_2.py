@@ -17,7 +17,7 @@ class coat(cloths):
     def sq(self):
         #empty body
         pass
-class jacket(cloths):
+class suit(cloths):
     def sq(self):
         #empty body
         pass
@@ -30,7 +30,7 @@ class my_coat(coat):
     def sq(self):
         return '%.2f' % (self.v/6.5 + 0.5)
 
-class my_jacket(coat):
+class my_suit(coat):
     def __init__(self, h):
         self.h = h
 
@@ -39,11 +39,11 @@ class my_jacket(coat):
         return'%.2f' % (self.h*2 + 0.3)
 
 c = my_coat(3)
-j = my_jacket(2)
+j = my_suit(2)
 a = c.sq
 b = j.sq
 print(f'Площадь ткани для пошива пальто составляет:  {c.sq} м.кв.')
-print(f'Площадь ткани для пошива костюма составляет:  { j.sq} м.кв.')
+print(f'Площадь ткани для пошива костюма составляет:  {j.sq} м.кв.')
 itog = float(a) + float(b)
 print(f'Общая площадь ткани составляет: {itog} м.кв.')
 
