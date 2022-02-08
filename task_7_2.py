@@ -48,9 +48,3 @@ itog = float(a) + float(b)
 print(f'Общая площадь ткани составляет: {itog} м.кв.')
 
 
-
-# @property
-#def my_method(self):
-#    return f"Общая площаль ткани составляет: ", self.size
-
-
