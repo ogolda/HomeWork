@@ -18,8 +18,6 @@ class ComplexNumber:
 
     def __str__(self):
         return f'z = {self.cel} + {self.mnim} * i'
-
-
 n1 = ComplexNumber(2, 3)
 n2 = ComplexNumber(4, 5)
 print(n1)
